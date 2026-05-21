@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #1c1c1c;
+  background: #f7f3ee;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #c8a97e;
+  color: #1c1c1c;
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .input {
+    @apply w-full rounded-2xl border border-taupe bg-white px-4 py-4 text-sm text-charcoal outline-none transition placeholder:text-muted/60 focus:border-gold focus:ring-4 focus:ring-gold/20;
+  }
+}
+
+/* Desktop optimizations for compact layout */
+@media (min-width: 1024px) {
+  .section-padding {
+    @apply py-16;
+  }
+
+  section {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Remove extra spacing on large screens */
+@media (min-width: 1280px) {
+  .gap-12 {
+    gap: 2rem;
+  }
+
+  .gap-10 {
+    gap: 2rem;
+  }
+}
+
+/* Optimize Hero section height for desktop */
+@media (min-width: 1024px) {
+  .min-h-\[96vh\] {
+    min-height: 90vh;
+  }
+}
+
+/* Ensure compact footer */
+footer {
+  margin-top: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}

@@ -1,0 +1,25 @@
+<svg width="720" height="430" viewBox="0 0 720 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Prasad Choudhhari Designs logo</title>
+  <desc id="desc">Gold architectural PCD monogram with Prasad Choudhhari Designs wordmark.</desc>
+  <rect width="720" height="430" fill="#F7F3EE"/>
+  <g transform="translate(190 26)" stroke="#B69255" stroke-width="9" stroke-linejoin="miter" stroke-linecap="square">
+    <path d="M24 250V112l54-19V26l94 64V38l114 75v50l54 22v65h-72v-92l-37-15v107h-58V123l-44 25v102H24Z"/>
+    <path d="M78 92v158"/>
+    <path d="M172 90v48"/>
+    <path d="M286 113v137"/>
+    <path d="M24 250h106"/>
+    <path d="M220 250h120"/>
+  </g>
+  <g fill="#2A1E17" font-family="Cormorant Garamond, Georgia, serif" text-anchor="middle">
+    <text x="360" y="334" font-size="48" letter-spacing="4">PRASAD CHOUDHHARI</text>
+    <text x="360" y="384" font-size="34" letter-spacing="6">DESIGNS</text>
+  </g>
+  <text x="360" y="418" fill="#1C1C1C" font-family="Inter, Arial, sans-serif" font-size="22" letter-spacing="7" text-anchor="middle">DEFINE. DRAFT. EXECUTE.</text>
+  <g transform="translate(225 152)" fill="none" stroke="#B69255" stroke-width="9" stroke-linecap="square">
+    <path d="M0 94V0h62c36 0 55 19 55 47 0 30-21 48-57 48H0Z"/>
+    <path d="M36 32h24c12 0 20 5 20 16 0 10-8 16-20 16H36V32Z"/>
+    <path d="M166 0c-50 0-88 35-88 80s38 80 88 80c33 0 60-15 76-40"/>
+    <path d="M235 0h48c46 0 78 31 78 80s-32 80-78 80h-48V0Z"/>
+    <path d="M275 34h12c24 0 39 17 39 46s-15 46-39 46h-12V34Z"/>
+  </g>
+</svg>
