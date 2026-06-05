@@ -156,17 +156,4 @@ npm run build
 - Lighthouse Score: 90+
 - Fully optimized for production
 
-## 🤝 Support
 
-For development or deployment questions, refer to:
-- [React Docs](https://react.dev/)
-- [Vite Guide](https://vitejs.dev/)
-- [Tailwind Docs](https://tailwindcss.com/)
-- [Vercel Docs](https://vercel.com/docs)
-
----
-
-**Status**: ✅ Production Ready  
-**Version**: 1.0.0  
-**Last Updated**: May 21, 2026  
-**GitHub**: https://github.com/wajiddaudtamboli/Prasad-Chaudhhari-Designs

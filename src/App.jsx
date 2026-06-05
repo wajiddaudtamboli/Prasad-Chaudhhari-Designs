@@ -22,9 +22,9 @@ import {
 } from "lucide-react";
 
 const contact = {
-  whatsapp: "+91 98765 43210",
-  phone: "+91 98765 43210",
-  email: "hello@prasadchoudhharidesigns.com",
+  whatsapp: "+91 9730096549",
+  phone: "+91 9730096549",
+  email: "prasad@wlds.co.in",
   address: "Pune, Maharashtra",
   instagram: "https://instagram.com/prasadchoudhharidesigns"
 };
@@ -156,11 +156,7 @@ function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-ivory/10 bg-walnut/80 text-ivory backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <button onClick={() => scrollToId("home")} className="flex items-center gap-3" aria-label="Prasad Choudhhari Designs home">
-          <img src="/logo.svg" alt="Prasad Choudhhari Designs" className="h-12 w-20 rounded bg-ivory object-contain p-1" />
-          <span className="hidden font-heading text-xl leading-none tracking-wide sm:block">
-            Prasad Choudhhari
-            <span className="block font-body text-[10px] uppercase tracking-[0.36em] text-gold">Designs</span>
-          </span>
+          <img src="/logo.svg" alt="Prasad Choudhhari Designs" className="h-20 w-20 object-contain" />
         </button>
 
         <nav className="hidden items-center gap-7 text-sm text-ivory/80 lg:flex">
@@ -172,9 +168,6 @@ function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a href={`tel:${contact.phone.replace(/\s/g, "")}`} className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ivory/20 text-gold transition hover:border-gold hover:bg-gold hover:text-charcoal" aria-label="Call Prasad Choudhhari Designs">
-            <Phone size={18} />
-          </a>
           <button onClick={() => scrollToId("contact")} className="rounded-2xl bg-gold-gradient px-5 py-3 text-sm font-semibold text-charcoal shadow-glow transition hover:translate-y-[-1px] active:translate-y-0">
             Book Consultation
           </button>
@@ -217,13 +210,13 @@ function Hero() {
       <div className="relative mx-auto flex min-h-screen flex-col items-end justify-end md:min-h-[96vh] lg:min-h-[90vh] max-w-7xl px-4 pb-12 pt-24 sm:px-6 lg:px-8 lg:pb-16">
         <motion.div initial={{ opacity: 0, y: 34 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }} className="max-w-5xl">
           <p className="mb-6 inline-flex items-center gap-3 rounded-full border border-ivory/20 bg-ivory/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-gold backdrop-blur">
-            <span className="h-1.5 w-1.5 rounded-full bg-gold" /> Pune Luxury Interiors
+            <span className="h-1.5 w-1.5 rounded-full bg-gold" /> Luxury Interiors
           </p>
           <h1 className="font-heading text-5xl leading-[1.02] text-ivory sm:text-6xl md:text-7xl lg:text-[82px]">
-            Homes designed with the same discipline we bring to the offices of Zeiss, Tricentis, and Litens.
+            Interiors That Earn Quiet Respect.
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-ivory/80 md:text-xl">
-            Premium residential interiors. Designed in Pune. Delivered in 90-120 days. By Prasad Choudhhari Designs.
+            Thoughtful home interior design from living room layouts to bedroom interiors in 90–120 days.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <button onClick={() => scrollToId("contact")} className="inline-flex items-center gap-2 rounded-2xl bg-gold-gradient px-6 py-4 text-sm font-bold text-charcoal shadow-glow transition hover:translate-y-[-2px] active:translate-y-0">
@@ -271,10 +264,10 @@ function About() {
         <FadeIn delay={0.12}>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.34em] text-beige">About / Promise</p>
           <h2 className="font-heading text-4xl leading-tight text-charcoal md:text-5xl lg:text-6xl">
-            Founder-led interiors with discipline, restraint, and quiet detail.
+            Luxury Interiors, Personally Delivered.
           </h2>
           <p className="mt-6 text-lg leading-9 text-muted">
-            Prasad Choudhhari Designs brings premium residential interiors to apartments, villas, penthouses, kitchens, and renovation projects. The promise is simple: define the vision, draft the details, execute with calm precision.
+            Founder-led design — from the first sketch to the final handover, every detail is owned.
           </p>
           <div className="mt-8 grid gap-3 sm:grid-cols-3">
             {[
@@ -298,7 +291,7 @@ function FeaturedProjects() {
   return (
     <section id="projects" className="section-padding bg-ivory-fade">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionIntro eyebrow="Featured Projects" title="Cinematic homes with warm material discipline." text="Dummy editorial imagery showing the direction: walnut textures, premium lighting, generous whitespace, and timeless residential calm." />
+        <SectionIntro eyebrow="Featured Projects" title="Spaces Built Around How You Live." text="From modular kitchen design to full-home residential interiors — every project is a considered original." />
         <div className="grid gap-4 sm:gap-5 md:grid-cols-3">
           {projects.map((project, index) => (
             <FadeIn key={project.title} delay={index * 0.08}>
@@ -310,7 +303,7 @@ function FeaturedProjects() {
                     <p className="text-xs uppercase tracking-[0.26em] text-gold">{project.type}</p>
                     <h3 className="mt-2 font-heading text-4xl">{project.title}</h3>
                     <p className="mt-2 text-sm text-ivory/80">{project.meta}</p>
-                  </div>
+                 </div>
                 </div>
               </article>
             </FadeIn>
@@ -325,11 +318,11 @@ function Packages() {
   return (
     <section id="packages" className="section-padding bg-walnut text-ivory">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionIntro light eyebrow="Packages" title="Choose the right level of intervention." text="Three premium engagement paths for compact apartments, full homes, and deeply custom villa or penthouse interiors." />
+        <SectionIntro light eyebrow="Packages" title="Interiors Scaled to Your Home." text="Choose the scope that fits — compact apartment, full residence, or a deeply detailed luxury home." />
         <div className="grid gap-5 lg:grid-cols-3">
           {packages.map((item, index) => (
             <FadeIn key={item.name} delay={index * 0.1}>
-              <article className={`rounded-[24px] border p-7 ${index === 1 ? "border-gold bg-ivory text-charcoal shadow-glow" : "border-ivory/10 bg-ivory/10 text-ivory"}`}>
+               <article className={`rounded-[24px] border p-7 ${index === 1 ? "border-gold bg-ivory text-charcoal shadow-glow" : "border-ivory/10 bg-ivory/10 text-ivory"}`}>
                 <p className={`text-xs font-bold uppercase tracking-[0.3em] ${index === 1 ? "text-beige" : "text-gold"}`}>{item.price}</p>
                 <h3 className="mt-4 font-heading text-4xl">{item.name}</h3>
                 <p className={`mt-4 leading-8 ${index === 1 ? "text-muted" : "text-ivory/70"}`}>{item.detail}</p>
@@ -356,9 +349,9 @@ function Kitchen() {
       <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:gap-10 lg:grid-cols-2 lg:px-8">
         <FadeIn>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.34em] text-beige">Modular Kitchen</p>
-          <h2 className="font-heading text-4xl leading-tight text-charcoal md:text-5xl lg:text-6xl">Cabinetry, hardware, lighting, and flow designed as one system.</h2>
+          <h2 className="font-heading text-4xl leading-tight text-charcoal md:text-5xl lg:text-6xl">Every Kitchen Has a Logic.</h2>
           <p className="mt-6 text-lg leading-9 text-muted">
-            A premium kitchen is not just shutter finish. It is movement, storage logic, appliance alignment, counter durability, lighting temperature, and everyday ease.
+            Cabinetry, counters, appliance placement, and lighting — planned as one considered system for daily ease.
           </p>
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
             {["German-inspired storage logic", "Premium hardware choices", "Countertop and backsplash planning", "Appliance-ready layouts"].map((point) => (
@@ -586,6 +579,21 @@ function TestimonialsFaq() {
 }
 
 function Contact() {
+  const [formData, setFormData] = useState({ name: "", phone: "", email: "", homeType: "", budget: "", details: "" });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const message = `Hi Prasad,\n\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nHome Type: ${formData.homeType}\nBudget: ${formData.budget}\nDetails: ${formData.details}`;
+    const whatsappUrl = `https://wa.me/${contact.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    setFormData({ name: "", phone: "", email: "", homeType: "", budget: "", details: "" });
+  };
+
   return (
     <section id="contact" className="section-padding bg-charcoal text-ivory">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
@@ -596,7 +604,6 @@ function Contact() {
             Share the basics and the studio will respond with the next steps for a consultation.
           </p>
           <div className="mt-8 space-y-4 text-ivory/80">
-            <a href={`tel:${contact.phone.replace(/\s/g, "")}`} className="flex items-center gap-3 hover:text-gold"><Phone size={18} /> {contact.phone}</a>
             <a href={`https://wa.me/${contact.whatsapp.replace(/\D/g, "")}`} className="flex items-center gap-3 hover:text-gold"><MessageCircle size={18} /> {contact.whatsapp}</a>
             <a href={`mailto:${contact.email}`} className="flex items-center gap-3 hover:text-gold"><ArrowRight size={18} /> {contact.email}</a>
             <p>{contact.address}</p>
@@ -604,29 +611,30 @@ function Contact() {
           </div>
         </FadeIn>
         <FadeIn delay={0.1}>
-          <form className="rounded-[28px] bg-ivory p-6 text-charcoal shadow-glow md:p-8" onSubmit={(event) => event.preventDefault()}>
+          <form className="rounded-[28px] bg-ivory p-6 text-charcoal shadow-glow md:p-8" onSubmit={handleSubmit}>
             <div className="grid gap-4 sm:grid-cols-2">
-              <input aria-label="Name" placeholder="Name" className="input" />
-              <input aria-label="Phone" placeholder="Phone" className="input" />
-              <input aria-label="Email" placeholder="Email" className="input sm:col-span-2" />
-              <select aria-label="Home type" className="input">
-                <option>2 BHK</option>
-                <option>3 BHK</option>
-                <option>Villa</option>
-                <option>Penthouse</option>
-                <option>Modular kitchen</option>
+              <input aria-label="Name" placeholder="Name" name="name" value={formData.name} onChange={handleInputChange} required className="input" />
+              <input aria-label="Phone" placeholder="Phone" name="phone" value={formData.phone} onChange={handleInputChange} required className="input" />
+              <input aria-label="Email" placeholder="Email" name="email" value={formData.email} onChange={handleInputChange} required className="input sm:col-span-2" />
+              <select aria-label="Home type" name="homeType" value={formData.homeType} onChange={handleInputChange} required className="input">
+                <option value="">Select Home Type</option>
+                <option value="2 BHK">2 BHK</option>
+                <option value="3 BHK">3 BHK</option>
+                <option value="Villa">Villa</option>
+                <option value="Penthouse">Penthouse</option>
+                <option value="Modular kitchen">Modular kitchen</option>
               </select>
-              <select aria-label="Budget" className="input">
-                <option>Budget range</option>
-                <option>Under Rs 15L</option>
-                <option>Rs 15L - Rs 30L</option>
-                <option>Rs 30L - Rs 60L</option>
-                <option>Rs 60L+</option>
+              <select aria-label="Budget" name="budget" value={formData.budget} onChange={handleInputChange} required className="input">
+                <option value="">Budget range</option>
+                <option value="Under Rs 15L">Under Rs 15L</option>
+                <option value="Rs 15L - Rs 30L">Rs 15L - Rs 30L</option>
+                <option value="Rs 30L - Rs 60L">Rs 30L - Rs 60L</option>
+                <option value="Rs 60L+">Rs 60L+</option>
               </select>
-              <textarea aria-label="Project details" placeholder="Tell us about your home, timeline, and preferred style" rows="5" className="input sm:col-span-2" />
+              <textarea aria-label="Project details" placeholder="Tell us about your home, timeline, and preferred style" name="details" value={formData.details} onChange={handleInputChange} required rows="5" className="input sm:col-span-2" />
             </div>
-            <button className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gold-gradient px-6 py-4 text-sm font-bold text-charcoal shadow-glow transition hover:translate-y-[-2px] active:translate-y-0">
-              Book Consultation <ArrowRight size={18} />
+            <button type="submit" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gold-gradient px-6 py-4 text-sm font-bold text-charcoal shadow-glow transition hover:translate-y-[-2px] active:translate-y-0">
+              Send to WhatsApp <ArrowRight size={18} />
             </button>
           </form>
         </FadeIn>
@@ -641,9 +649,6 @@ function FloatingActions() {
       <div className="fixed bottom-5 left-4 z-40 flex flex-col gap-3">
         <a href={`https://wa.me/${contact.whatsapp.replace(/\D/g, "")}`} className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-luxury" aria-label="WhatsApp">
           <MessageCircle size={22} />
-        </a>
-        <a href={`tel:${contact.phone.replace(/\s/g, "")}`} className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-walnut text-gold shadow-luxury" aria-label="Call">
-          <Phone size={20} />
         </a>
       </div>
       <button onClick={() => scrollToId("estimate")} className="fixed bottom-5 right-4 z-40 inline-flex items-center gap-2 rounded-full bg-gold-gradient px-5 py-4 text-sm font-bold text-charcoal shadow-glow transition hover:translate-y-[-2px] active:translate-y-0">
@@ -673,7 +678,7 @@ export default function App() {
         <Contact />
       </main>
       <footer className="bg-walnut px-4 py-8 text-center text-sm text-ivory/60">
-        <img src="/logo.svg" alt="Prasad Choudhhari Designs" className="mx-auto mb-4 h-16 w-28 rounded bg-ivory object-contain p-1" />
+        <img src="https://res.cloudinary.com/duhhsnbwh/image/upload/v1780637262/footer-logo_heee1n.jpg" alt="Prasad Choudhhari Designs" className="mx-auto mb-4 h-20 object-contain rounded-2xl" />
         <p>Prasad Choudhhari Designs - Define. Draft. Execute.</p>
       </footer>
       <FloatingActions />
